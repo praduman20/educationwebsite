@@ -1,0 +1,21 @@
+{
+  "name": "fully-responsive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body": "^5.1.0",
+    "ejs": "^3.1.6",
+    "express.js": "^1.0.0",
+    "mongoose": "^5.13.2",
+    "node.js": "0.0.1-security",
+    "nodemon": "^2.0.12",
+    "parser": "^0.1.4",
+    "path": "^0.12.7"
+  }
+}

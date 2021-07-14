@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    padding: 4px 6px;
+    position: sticky;
+    top:0;
+}
+.navlist{
+    width: 70%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.navlist li{
+    list-style: none;
+}
+
+.navlist a{
+    color: white;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    margin: 0px 6px;
+    padding: 12px 18px;
+}
+.navlist a:hover{
+    background-color: rgba(128, 128, 128, 0.644);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 6px 12px;
+}
+.navlist img{
+    height: 40px;
+    width: 38px;
+    border:white;
+    border-radius: 50px;
+    margin: 2px 12px;
+}
+
+.rightnav{
+    width: 30%;
+    text-align: right;
+    padding: 6px 10px;
+    margin: 2px 2px;
+}
+#search{
+    padding: 4px;
+    color: black;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.btnsmall{
+    margin: 2px 2px;
+    padding: 2px 2px;
+    font-size: 13px;
+    border: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+    background: none;
+    color: white;
+}
+
+.background{
+    background: rgba(0, 0 ,0 , 0.7) url('../bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.boxmain{
+    display: flex;
+    max-width: 60%;
+    margin: auto;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.firstsection{
+     height: 100vh;
+}
+
+.fhalf{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+}
+
+.shalf{
+    width:30%;
+}
+.shalf img{
+    width: 205px;
+    height: 190px;
+    border: 2px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.textbig{
+    font-size: 40px;
+}
+
+.smalltext{
+    font-size: 18px;
+}
+
+.btn{
+    padding: 8px 18px;
+    margin: 7px 0px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 14px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.secright{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 85%;
+    margin: auto;
+}
+.secleft{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 85%;
+    margin: auto;
+}
+
+.sectiontag{
+    padding: 20px 10px;
+}
+.sectionsubtag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2px 10px;
+}
+.thumbmail{
+    padding: 2px 2px;
+}
+.thumbmail img{
+    width: 252px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin:15px 12px;
+    margin-top: 35px;
+    box-shadow: 12px 12px #494139;
+}
+
+.textfooter{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 20px;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width: 935px){
+    .navlist{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 445px;
+        transition: all 0.7s ease-out;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .boxmain{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .textfooter{
+        height: 50px;
+    }
+    .firstsection{
+        flex-direction: column-reverse;
+    }
+    .textsmall{
+        text-align: center;
+    }
+    .textbig{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .firstsection {
+        height: 108vh;
+    }
+    .secright{
+        flex-direction: column-reverse;
+    }
+    .secleft{
+        flex-direction: column;
+    }
+    .thumbmail{
+        padding: 16px 2px;
+    }
+    .shalf img{
+        margin: 0px -35px;
+    }
+}
+
+
+
